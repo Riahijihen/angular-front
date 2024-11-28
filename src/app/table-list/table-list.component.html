@@ -1,0 +1,48 @@
+<div class="main-content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-danger">
+              <h4 class="card-title">Les médecins</h4>
+              <p class="card-category">Les Membres</p>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead class=" text-primary">
+                    <th>ID</th>
+                    <th>Nom</th>
+                    <th>Ville</th>
+                    <th>Numéro Tel</th>
+                    <th>Spécialité</th>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let medecin of medecins">
+
+                      
+                      <td>{{ medecin.id }}</td>
+                      <td>{{ medecin.nom }}</td>
+                      <td>{{ medecin.ville }}</td>
+                      <td>{{ medecin.numero_tel }}</td>
+                      <td class="text-primary">{{ medecin.specialite }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="card card-plain">
+            <div class="card-body">
+              <div class="table-responsive">
+                <!-- You can add more content here if needed -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
